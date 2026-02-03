@@ -23,5 +23,6 @@ public class Student {
 	String getStuNo() {
 		return this.stuNO;
 	}
+	 
 	
 }
