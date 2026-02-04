@@ -1,14 +1,17 @@
 package day5.classEX;
 
-public class Student {
+import day5.Human;
+
+public class Student extends Human{
 	//변수(필드) + 메소드 
 	String name;
 	int age;
-	private String stuNO;
+	public String stuNO;
 	int money; //개인의돈
+	public String stuNo;
 	static int money_708 = 200000; //708호 회비
 	
-	Student(String name,int age,String stuNo){
+	public Student(String name,int age,String stuNo){
 		this.name = name;
 		this.age = age;
 		this.stuNO = stuNo;
@@ -20,9 +23,20 @@ public class Student {
 	void study(String subject) {
 		System.out.println(subject + "를 공부한다");
 	}
-	String getStuNo() {
+	public String getStuNo() {
 		return this.stuNO;
 	}
+
+	public void setStuNo1(String stuNo) {
+		this.stuNo = stuNo;
+	}
+
+	public void setStuNo(String stuNo) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
 	 
 	
 }

@@ -1,12 +1,12 @@
 package day5;
 
 public class Human {
-	String name;
-	int age;
-	private String addr;
+	public String name;
+	public int age;
+	public String addr;
 	int money;
-	Human(){}
-	Human(String name, int money){
+	public Human(){}
+	public Human(String name, int money){
 		this.name = name;
 		this.money = money;
 	}

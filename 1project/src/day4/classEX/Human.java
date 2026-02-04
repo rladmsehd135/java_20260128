@@ -3,7 +3,7 @@ package day4.classEX;
 public class Human {
 	// 변수(필드) 영역
 	String name;
-	int age;
+	protected int age;
 	double height;
 	boolean isMarried;
 

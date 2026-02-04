@@ -1,7 +1,7 @@
 package day5.classEX;
 
 public class Fruit {
-	private String name;
+	public String name;
 	private int price;
 	private int count;
 	
