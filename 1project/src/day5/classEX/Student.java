@@ -5,7 +5,7 @@ import day5.Human;
 public class Student extends Human{
 	//변수(필드) + 메소드 
 	String name;
-	int age;
+	private int age;
 	public String stuNO;
 	int money; //개인의돈
 	public String stuNo;
