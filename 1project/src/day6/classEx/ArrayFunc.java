@@ -88,4 +88,21 @@ public class ArrayFunc {
 		return OddArr;
 		
 	}
+	public int[] createEvenArr(int arr[]) {
+		int size = 0; //홀수 수만큼 배열 저장
+		for(int i=0; i<arr.length; i++) {
+			size = arr[i]%2==0 ? ++size : size;
+		}
+		
+		int EvenArr[] = new int[size]; // 
+		int j = 0;
+		for(int i=0; i<arr.length; i++) {
+			if(arr[i]%2==0) {
+				EvenArr[j++] = arr[i];
+			}
+		}
+		
+		return EvenArr;
+		
+	}
 }
