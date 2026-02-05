@@ -1,0 +1,23 @@
+package day7;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class test7 {
+	public static void main(String[] args) {
+		//6번에서 정의한 배열에서 홀수들의 합과 짝수들이 합의 차이 구하기
+		int arr[] = {4, 2, 3, 4, 5};
+		int sum = 0;
+		int sum2 = 0;
+		for(int i = 0; i<arr.length; i++) {
+			if(arr[i]%2==0) {
+				sum += arr[i];
+			}
+			else if(arr[i]%2==1) {
+				sum2 += arr[i];
+			}
+			
+		}
+		System.out.println("짝수들의 합: " + sum + " 홀수들의합: " + sum2 + "둘의 차이:" + (sum-sum2));
+	}
+}
