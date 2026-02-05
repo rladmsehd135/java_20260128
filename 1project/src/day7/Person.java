@@ -16,7 +16,12 @@ public class Person {
 		this.number = number;
 	}
 	
-
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.name + "의 나이는" + this.age + "살 입니다";
+	}
+	
 	public String getName() {
 		return name;
 	}
