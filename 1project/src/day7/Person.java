@@ -21,6 +21,12 @@ public class Person {
 		// TODO Auto-generated method stub
 		return this.name + "의 나이는" + this.age + "살 입니다";
 	}
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		Person p = (Person) obj;
+		return this.name == p.name;
+	}
 	
 	public String getName() {
 		return name;

@@ -1,7 +1,12 @@
 package day7;
 
 public class Java3_toString {
+	static void test(Object obj) {
+		
+	}
 	public static void main(String[] args) {
+		
+		
 		
 		Person hong = new Person("홍길동",30);
 		Person hong2 = new Person("홍길동",30);
@@ -14,5 +19,7 @@ public class Java3_toString {
 		
 		String str = new String("zz");
 		System.out.println(str);
+		
+		test(1);
 	}
 }

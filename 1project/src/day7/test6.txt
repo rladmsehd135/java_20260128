@@ -1,0 +1,47 @@
+package day7;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class test7 {
+	public static void main(String[] args) {
+		// 6. 크기가 5인 int형 배열을 선언하고 사용자로부터 숫자를 입력받아서 5개의 값 넣기
+		// 단, 0이하의 수를 입력하거나 중복된 숫자가 있으면 안내 문구를 출력 후 다시 입력 받을 것
+		// => 해당 조건이 어려우면 일단 5개 정상적으로 입력했다고 가정하고 진행하세요
+		int[] numbers = new int[5]; // 5개 공간 배열
+		Scanner scanner = new Scanner(System.in);
+
+		for (int i = 0; i < numbers.length; i++) {
+			System.out.print((i + 1) + "번째 숫자를 입력하세요 (0 이하 제외, 중복 불가): ");
+			int input = scanner.nextInt();
+
+			// 1. 0 이하 숫자면 다시 입력 (현재 인덱스 i를 감소시켜 다시 입력받음)
+			if (input <= 0) {
+				System.out.println("0 이하의 숫자는 입력할 수 없습니다. 다시 입력해주세요.");
+				i--;
+				continue;
+			}
+
+			// 2. 중복 제거 체크
+			boolean isDuplicate = false;
+			for (int j = 0; j < i; j++) {
+				if (numbers[j] == input) {
+					isDuplicate = true;
+					break;
+				}
+			}
+
+			if (isDuplicate) {
+				System.out.println("중복된 숫자입니다. 다시 입력해주세요.");
+				i--; // 현재 인덱스 다시 입력받기 위해 감소
+				continue;
+			}
+
+			// 3. 조건 만족 시 배열에 저장
+			numbers[i] = input;
+		}
+
+		// 결과 출력
+		System.out.println(Arrays.toString(numbers));
+	}
+}
