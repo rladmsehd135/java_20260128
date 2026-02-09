@@ -12,11 +12,7 @@ public class subString1 {
 		
 		for(int i=0; i<input.length(); i++) {
 			input = input.substring(1)+ input.substring(0, 1);
-			System.out.println(input);
-			
-			
-			
-			
+			System.out.println(input);			
 		}
 		
 	}
